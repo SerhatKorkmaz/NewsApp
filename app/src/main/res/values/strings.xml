@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NewsApp</string>
+    <string name="couldNotLoaded">Results could not be loaded</string>
+    <string name="noResult">No result found for this search</string>
 </resources>
