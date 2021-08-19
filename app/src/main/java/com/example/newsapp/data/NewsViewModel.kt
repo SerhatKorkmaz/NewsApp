@@ -6,6 +6,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
+import javax.inject.Inject
+
 
 class NewsViewModel @ViewModelInject constructor(
     private val repo: NewsRepo
