@@ -2,4 +2,6 @@
     <string name="app_name">NewsApp</string>
     <string name="couldNotLoaded">Results could not be loaded</string>
     <string name="noResult">No result found for this search</string>
+    <string name="retry">Retry</string>
+    <string name="results_could_not_be_loaded">Results Could not be loaded!</string>
 </resources>

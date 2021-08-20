@@ -12,11 +12,10 @@ interface NewsAPI {
         const val url = "https://newsapi.org/"
         const val key = BuildConfig.NEWSAPI_ACCESS_KEY
     }
-
-    @Headers("apiKey=key $key")
     @GET("v2/everything")
     suspend fun searchNews(
         @Query ("q") q:String,
-        @Query ("page") page:Int
+        @Query ("page") page:Int,
+        @Query ("apiKey") apiKey:String = key
     ):NewsResponse
 }
