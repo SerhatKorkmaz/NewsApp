@@ -8,15 +8,18 @@ import android.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import com.example.newsapp.R
+import com.example.newsapp.data.NewsData
 import com.example.newsapp.data.NewsViewModel
 import com.example.newsapp.databinding.FragmentNewsBinding
 import com.example.newsapp.databinding.LoadStateFooterBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class NewsFragment : Fragment(R.layout.fragment_news){
+class NewsFragment : Fragment(R.layout.fragment_news), NewsAdapter.OnItemClickListener{
 
     private val viewModel by viewModels<NewsViewModel>()
 
@@ -28,7 +31,10 @@ class NewsFragment : Fragment(R.layout.fragment_news){
 
         _binding = FragmentNewsBinding.bind(view)
 
-        val adapter = NewsAdapter()
+        val navBar: BottomNavigationView = requireActivity()!!.findViewById(com.example.newsapp.R.id.bottom_nav)
+        navBar.isVisible = true
+
+        val adapter = NewsAdapter(this)
 
         binding.apply {
             recyclerview.setHasFixedSize(true)
@@ -45,7 +51,7 @@ class NewsFragment : Fragment(R.layout.fragment_news){
         viewModel.news.observe(viewLifecycleOwner){
             adapter.submitData(viewLifecycleOwner.lifecycle, it)
         }
-/*
+
         adapter.addLoadStateListener { LoadState->
             binding.apply {
                 pbNews.isVisible = LoadState.source.refresh is LoadState.Loading
@@ -61,8 +67,13 @@ class NewsFragment : Fragment(R.layout.fragment_news){
                     tvWarningNodata.isVisible = false
             }
         }
-*/
+
         setHasOptionsMenu(true)
+    }
+
+    override fun onItemCLick(new: NewsData) {
+         val action = NewsFragmentDirections.actionNewsFragmentToDetailsFragment(new)
+        findNavController().navigate(action)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

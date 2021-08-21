@@ -8,6 +8,35 @@
     <fragment
         android:id="@+id/newsFragment"
         android:name="com.example.newsapp.ui.NewsFragment"
-        android:label="fragment_news"
-        tools:layout="@layout/fragment_news" />
+        android:label="Appcent NewsApp"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_newsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.newsapp.ui.DetailsFragment"
+        android:label="   "
+        tools:layout="@layout/fragment_news_details">
+        <argument
+            android:name="new"
+            app:argType="com.example.newsapp.data.NewsData" />
+        <action
+            android:id="@+id/action_detailsFragment_to_webViewFragment2"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.newsapp.ui.WebViewFragment"
+        android:label="New's Source"
+        tools:layout="@layout/fragment_source">
+        <argument
+            android:name="Source"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.newsapp.ui.FavoritesFragment"
+        android:label="FavoritesFragment" />
 </navigation>
