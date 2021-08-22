@@ -6,6 +6,6 @@
         android:title="News" />
     <item
         android:id="@+id/favoritesFragment"
-        android:icon="@drawable/ic_favorites"
+        android:icon="@drawable/ic_heart"
         android:title="Favorites" />
 </menu>

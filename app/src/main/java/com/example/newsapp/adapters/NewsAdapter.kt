@@ -1,8 +1,7 @@
-package com.example.newsapp.ui
+package com.example.newsapp.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.AdapterView
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -12,7 +11,9 @@ import com.example.newsapp.R
 import com.example.newsapp.data.NewsData
 import com.example.newsapp.databinding.ItemNewsapiBinding
 
-class NewsAdapter(private val listener : OnItemClickListener ) : PagingDataAdapter<NewsData,NewsAdapter.NewsViewHolder>(NEWS_COMPARATOR) {
+class NewsAdapter(private val listener : OnItemClickListener) : PagingDataAdapter<NewsData, NewsAdapter.NewsViewHolder>(
+    NEWS_COMPARATOR
+) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         val binding = ItemNewsapiBinding.inflate(LayoutInflater.from(parent.context), parent , false)

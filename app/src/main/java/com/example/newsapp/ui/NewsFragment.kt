@@ -4,17 +4,16 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.View
-import android.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import com.example.newsapp.R
+import com.example.newsapp.adapters.NewsAdapter
 import com.example.newsapp.data.NewsData
 import com.example.newsapp.data.NewsViewModel
 import com.example.newsapp.databinding.FragmentNewsBinding
-import com.example.newsapp.databinding.LoadStateFooterBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
