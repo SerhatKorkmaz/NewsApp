@@ -23,6 +23,16 @@
         <entry key="..\:/NewsApp/app/src/main/res/menu/bottom_navigation.xml" value="0.3489583333333333" />
         <entry key="..\:/NewsApp/app/src/main/res/menu/menu_details.xml" value="0.24375" />
         <entry key="..\:/NewsApp/app/src/main/res/menu/menu_news.xml" value="0.14739583333333334" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/drawable/bg_drawable.xml" value="0.25729166666666664" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/drawable/gradient.xml" value="0.2703125" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.21829710144927536" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/fragment_favorites.xml" value="0.1453804347826087" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/fragment_news.xml" value="0.265625" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/fragment_news_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/fragment_source.xml" value="0.25416666666666665" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/item_newsapi.xml" value="0.21829710144927536" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/load_state_footer.xml" value="0.25416666666666665" />
+        <entry key="..\:/newsApp/NewsApp/app/src/main/res/layout/search_header.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

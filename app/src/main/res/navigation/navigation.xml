@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/newsFragment"
         android:name="com.example.newsapp.ui.NewsFragment"
-        android:label="Appcent NewsApp"
+        android:label="NewsApp"
         tools:layout="@layout/fragment_news">
         <action
             android:id="@+id/action_newsFragment_to_detailsFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.example.newsapp.ui.DetailsFragment"
-        android:label="   "
+        android:label="News Details"
         tools:layout="@layout/fragment_news_details">
         <argument
             android:name="new"
@@ -38,7 +38,7 @@
     <fragment
         android:id="@+id/favoritesFragment"
         android:name="com.example.newsapp.ui.FavoritesFragment"
-        android:label="FavoritesFragment" >
+        android:label="Favorite News" >
         <action
             android:id="@+id/action_favoritesFragment_to_detailsFragment2"
             app:destination="@id/detailsFragment" />
