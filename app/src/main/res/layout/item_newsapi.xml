@@ -19,6 +19,12 @@
         android:background="@drawable/gradient"
         />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient" />
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
@@ -29,8 +35,11 @@
         android:textSize="20sp"
         android:maxLines="1"
         android:textColor="#fff"
-        android:textStyle="bold"
-        tools:text="Test Title" />
+        android:layout_above="@id/tv_body"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
 
     <TextView
         android:id="@+id/tv_body"
