@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/newsFragment"
         android:name="com.example.newsapp.ui.NewsFragment"
-        android:label="Appcent NewsApp"
+        android:label="NewsApp"
         tools:layout="@layout/fragment_news">
         <action
             android:id="@+id/action_newsFragment_to_detailsFragment"

@@ -18,7 +18,7 @@ class NewsAdapter(private val listener : OnItemClickListener) : PagingDataAdapte
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         val binding = ItemNewsapiBinding.inflate(LayoutInflater.from(parent.context), parent , false)
 
-        return  NewsViewHolder(binding);
+        return NewsViewHolder(binding);
     }
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
